@@ -1,9 +1,9 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Transform: AWS::Serverless-2016-10-31
+Transform: 'AWS::Serverless-2016-10-31'
 Description: An AWS Serverless Specification template describing your function.
 Resources:
-  photo_search:
-    Type: AWS::Serverless::Function
+  indexphotos:
+    Type: 'AWS::Serverless::Function'
     Properties:
       Handler: lambda_function.lambda_handler
       Runtime: python3.6
@@ -11,4 +11,4 @@ Resources:
       Description: ''
       MemorySize: 128
       Timeout: 3
-      Role: arn:aws:iam::386610312482:role/searchphotos-role
+      Role: 'arn:aws:iam::386610312482:role/service-role/index_photos-role-ufoomyji' 
