@@ -6,5 +6,6 @@ phases:
 artifacts:  
   type: zip
   files:
+    - search.yaml 
 
 
