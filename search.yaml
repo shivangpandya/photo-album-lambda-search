@@ -12,3 +12,7 @@ Resources:
       MemorySize: 128
       Timeout: 3
       Role: 'arn:aws:iam::386610312482:role/service-role/index_photos-role-ufoomyji' 
+
+
+
+      
