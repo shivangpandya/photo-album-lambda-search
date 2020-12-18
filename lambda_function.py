@@ -49,6 +49,7 @@ def sendToLex(message):
     
 def lambda_handler(event, context):
     # TODO implement
+    print("hello")
     credentials = boto3.Session().get_credentials()
     region = "us-east-1"
     service = "es"
