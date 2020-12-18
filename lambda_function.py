@@ -17,6 +17,7 @@ def searchIndices():
     return res
 
 def searchElasticIndex(search):
+    print("hello")
     photos = []
     for s in search:
         host = 'https://search-photos-khcjss3c77o2erqokp2pi6dvea.us-east-1.es.amazonaws.com/photos/_search?q='+s
