@@ -6,6 +6,7 @@ from datetime import datetime
 
 def indexIntoES(document):
     host = 'https://vpc-photos-ckzmaanotkmt2wvajojjlqunvm.us-east-1.es.amazonaws.com'
+    print("Hello")
     index = 'photos'
     type = 'lambda-type'
     url = host + '/' + index + '/' + type
