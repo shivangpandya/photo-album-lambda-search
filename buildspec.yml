@@ -1,9 +1,14 @@
-version: 0.2  
-phases:  
+version: 0.2
+phases:
   install:
+    runtime-versions:
+        python: 3.6
+  build:
     commands:
-      - aws cloudformation package --template-file template.yaml --s3-bucket code-pipeline-p1 --output-template-file search.yaml
-artifacts:  
-  type: zip
+      - pip install --upgrade pip
+      - pip install pipenv --user
+      - pipenv install awscli aws-sam-cli
+      - pipenv run sam package --template-file template.yml --s3-bucket code-pipeline-p2 --output-template-file packaged-template.yml
+artifacts:
   files:
-    - search.yaml
+    - packaged-template.yml
