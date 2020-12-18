@@ -46,6 +46,7 @@ def sendToLex(message):
     
 def lambda_handler(event, context):
     # TODO implement
+    print("Test lambda")
     photos = []
     #res = clearIndices() used to clear indexes in ES
     #res = searchIndices() #used to check index
